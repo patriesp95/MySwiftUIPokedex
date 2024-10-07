@@ -13,26 +13,7 @@ struct PokemonListView: View {
         NavigationStack {
             List {
                 ForEach(api.pokemons) { pokemon in
-                    HStack {
-                        VStack(alignment: .leading){
-                            Text(pokemon.name)
-                                .font(.headline)
-                            Text(pokemon.types)
-                                .font(.caption)
-                                .foregroundStyle(.secondary)
-                        }
-                        AsyncImage(url: pokemon.imageURL) { pokeImage in
-                            pokeImage
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-                                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                        } placeholder: {
-                            Image(systemName: "tortoise")
-                        }
-
-                    }
-                    
+                    PokeCell(pokemon: pokemon)
                 }
             }
             .listRowSpacing(20)

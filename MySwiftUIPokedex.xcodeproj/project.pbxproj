@@ -16,6 +16,7 @@
 		0027975D2CAEC3E4001DCFED /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027975C2CAEC3E4001DCFED /* ApiManager.swift */; };
 		002797602CAEC419001DCFED /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027975F2CAEC419001DCFED /* Pokemon.swift */; };
 		002797632CAEC51E001DCFED /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002797622CAEC51E001DCFED /* Extensions.swift */; };
+		00391F192CB3F01700FDDC78 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00391F182CB3F01700FDDC78 /* PokeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		0027975C2CAEC3E4001DCFED /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		0027975F2CAEC419001DCFED /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		002797622CAEC51E001DCFED /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		00391F182CB3F01700FDDC78 /* PokeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,12 +108,21 @@
 		002797642CAEC586001DCFED /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				00391F172CB3F00200FDDC78 /* Cell */,
 				002797572CAEBD56001DCFED /* pokemons.json */,
 				002797592CAEC3A4001DCFED /* PokemonListView.swift */,
 				0027975B2CAEC3C7001DCFED /* Manager */,
 				002797612CAEC4FC001DCFED /* Model */,
 			);
 			name = Pokedex;
+			sourceTree = "<group>";
+		};
+		00391F172CB3F00200FDDC78 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				00391F182CB3F01700FDDC78 /* PokeCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 				002797632CAEC51E001DCFED /* Extensions.swift in Sources */,
 				0027975D2CAEC3E4001DCFED /* ApiManager.swift in Sources */,
 				0027974C2CAEBD38001DCFED /* ContentView.swift in Sources */,
+				00391F192CB3F01700FDDC78 /* PokeCell.swift in Sources */,
 				0027975A2CAEC3A4001DCFED /* PokemonListView.swift in Sources */,
 				0027974A2CAEBD38001DCFED /* MySwiftUIPokedexApp.swift in Sources */,
 			);
